@@ -1,2 +1,6 @@
 # portfolio_nicolas
-Projeto de portfólio para atividade final do módulo Front-End I do curso Starter Web Full Stack - Growdev
+# Atividade Final do Módulo - Front-End I
+
+Projeto de portfólio para colocar em prática todos os conhecimentos adquiridos até o momento atual do curso...
+
+[Acesse a página!](https://nico-nascimento.github.io/portfolio_nicolas/index.html)
