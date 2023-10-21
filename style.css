@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Tilt+Neon&display=swap');
+
+:root {
+    --primary-darker: #28203e;
+    --primary: #8257e5;
+    --primary-hover: #9466ff;
+    --text: #a8a8b3;
+    --text-dark: #7e50ff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./images/back-img.jpg);
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Barra de Navegação Início */
+
+.nav {
+    width: 20vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    background: linear-gradient(61deg, rgba(40,32,62,1) 0%, rgba(51,32,62,1) 100%);
+    border-right: 1px solid var(--text);
+    transition: 0.5s ease-in-out;
+    transition-delay: 250ms;
+}
+
+.nav:hover {
+    box-shadow: 0px 0px 50px 5px rgba(225, 0, 255, 0.9);
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.nav-links a:hover{
+    color: var(--primary-hover);
+    transition: 0.5s ease-in-out;
+}
+
+.nav-links a strong:hover{
+    color: var(--primary-hover);
+    transition: 0.5s ease-in-out;
+}
+
+.nav-links a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.nav-links a strong {
+    color: white;
+}
+
+.profile {
+    border-radius: 100%;
+    width: 15rem;
+    height: 15rem;
+    border: 2px solid var(--text);
+}
+
+.profile:hover {
+    box-shadow: 0px 0px 5px 5px rgba(158,54,255,1);
+    border: 2px solid var(--primary-hover);
+    transition: 0.5s ease-in-out;
+}
+
+/* Barra de Navegação Final */
+
+/* Conteúdo Sobre Início */
+
+.about-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2.5rem;
+    height: 100vh;
+    padding: 0 3rem;
+    gap: 2.5rem;
+}
+
+.information {
+    color: white;
+}
+
+.information h1 {
+    font-size: 5rem;
+}
+
+.information h3 {
+    font-size: 1.4rem;
+}
+
+.information h3 a {
+    color: var(--primary-hover);
+    text-decoration: none;
+}
+
+.information h3 a:hover {
+    text-decoration: underline;
+    transition: 0.5s ease-in-out;
+    transition-delay: 150ms;
+}
+
+.information span {
+    background: linear-gradient(45deg, #7762ab, #66509c, #392c58, #7762ab);
+    background-size: 400% 100%;
+    animation: degrade 10s linear infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes degrade {
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+
+.description {
+    color: white;
+    font-size: 1.30rem;
+}
+
+.icons {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.img-icons {
+    border-radius: 100%;
+    transition: 0.5s ease-in-out;
+    transition-delay: 150ms;
+}
+
+.img-icons:hover {
+    box-shadow: 0px 0px 25px 5px rgba(158,54,255,1);
+    background-color: rgba(142, 56, 255, 0.9);
+}
+
+/* Conteúdo Sobre Final*/
+
+/* Conteúdo Conhecimentos Início*/
+
+.know-contents {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding-left: 2.5rem;
+    height: 100vh;
+    padding: 0 3rem;
+    gap: 5rem;
+}
+
+.card-contents {
+    list-style: none;
+}
+
+.card-logo {
+    max-width: 2.8rem;
+    max-height: 2.8rem;
+    margin-top: 0.3rem;
+    border-radius: 0.3rem;
+}
+
+.card-logo:hover {
+    background-color: var(--primary-hover);
+    transition: 0.5s ease-in-out;
+    transition-delay: 150ms;
+}
+
+.block-contents {
+  max-width: 40rem;
+  max-height: 40rem;
+  background-color: var(--primary-darker);
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  border-radius: 10px; 
+}
+
+.block-contents h2 {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.block-contents p {
+    color: var(--text);
+}
+
+.block-contents a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+.block-contents a:hover {
+    color: var(--primary-hover);
+    transition: 0.5s ease-in-out;
+}
+
+/* Conteúdo Conhecimentos Final */
+
+/* Conteúdo Objetivos Início */
+
+.target-contents {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding-left: 2.5rem;
+    height: 100vh;
+    padding: 0 3rem;
+    gap: 5rem;
+}
+
+.target-card-contents {
+  max-width: 50rem;
+  max-height: 50rem;
+  background-color: var(--primary-darker);
+  margin: 1.5rem;
+  padding-top: 1rem;
+  padding-left: 3rem;
+  padding-right: 2rem;
+  border-radius: 10px;
+}
+
+.target-contents div h2 {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.heart-gif {
+    width: 1.5rem;
+}
+
+.target-contents div ul li{
+    color: var(--text);
+    text-align: justify;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.target-contents a{
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.target-contents a:hover{
+    color: var(--primary-hover);
+    transition: 0.5s ease-in-out;
+}
+
+/* Conteúdo Objetivos Final */
