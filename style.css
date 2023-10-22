@@ -79,8 +79,8 @@ body {
 
 .profile {
     border-radius: 100%;
-    width: 15rem;
-    height: 15rem;
+    width: 14rem;
+    height: 14rem;
     border: 2px solid var(--text);
 }
 
@@ -200,22 +200,23 @@ body {
   max-width: 40rem;
   max-height: 40rem;
   background-color: var(--primary-darker);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
   padding: 1rem;
   border-radius: 10px; 
 }
 
 .block-contents h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: white;
 }
 
 .block-contents p {
     color: var(--text);
+    font-size: 0.8rem;
 }
 
 .block-contents a {
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-decoration: none;
     color: white;
 }
