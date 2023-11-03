@@ -18,14 +18,12 @@ body {
     display: flex;
     width: 100vw;
     height: 100vh;
-    background-image: url(./images/back-img.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-color: #e056fd; */
+    background: linear-gradient(315deg, #e056fd 0%, #000000 74%);
     right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-    position: absolute;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -203,6 +201,12 @@ body {
   margin-bottom: 0.3rem;
   padding: 1rem;
   border-radius: 10px; 
+  transition: 0.5s ease-in-out;
+  transition-delay: 150ms;
+}
+
+.block-contents:hover {
+    box-shadow: 0px 0px 10px 5px rgba(225, 0, 255, 0.9);
 }
 
 .block-contents h2 {
@@ -249,6 +253,12 @@ body {
   padding-left: 3rem;
   padding-right: 2rem;
   border-radius: 10px;
+  transition: 0.5s ease-in-out;
+  transition-delay: 150ms;
+}
+
+.target-card-contents:hover {
+    box-shadow: 0px 0px 10px 5px rgba(225, 0, 255, 0.9);
 }
 
 .target-contents div h2 {
